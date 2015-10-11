@@ -1,0 +1,74 @@
+<style is="custom-style">
+body {
+    font-family: Roboto, 'Noto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#settings {
+    max-width: 384px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.interval {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border-left: none;
+    transition: background-color 0.25s, border-left 0.25s;
+}
+
+.interval:not(.open) {
+    border-radius: 2px;
+    height: 64px;
+    overflow: hidden;
+    background-color: var(--light-primary-color);
+}
+
+.interval.open {
+    border-left: 2px solid var(--accent-color);
+}
+
+.interval > div {
+    height: 64px;
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.interval > div > paper-input {
+    max-width: 64px;
+}
+
+.interval > div > .multiplicator-input {
+    max-width: 96px;
+}
+
+.interval > div > span {
+    line-height: 22px;
+    margin-top: 32px;
+}
+
+.interval > div > paper-slider {
+    margin-top: 32px;
+}
+
+.multiplicator:not(.on),
+.intensity:not(.on) {
+    display: none;
+}
+
+@media all and (min-width: 440px) {
+    body {
+        background-color: var(--primary-background-color);
+    }
+    #settings {
+        background-color: #fff;
+        padding: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        border-radius: 2px;
+        @apply(--shadow-elevation-2dp);
+    }
+}
+</style>
