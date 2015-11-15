@@ -23,6 +23,7 @@
     "paper-icon-button": "PolymerElements/paper-icon-button#~1.0.4",
     "paper-slider": "PolymerElements/paper-slider#~1.0.7",
     "paper-radio-group": "PolymerElements/paper-radio-group#~1.0.5",
-    "paper-radio-button": "PolymerElements/paper-radio-button#~1.0.9"
+    "paper-radio-button": "PolymerElements/paper-radio-button#~1.0.9",
+    "webcomponentsjs": "~0.7.17"
   }
 }
